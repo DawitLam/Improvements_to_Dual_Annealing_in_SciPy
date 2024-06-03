@@ -27,4 +27,4 @@ Ensure you have Python and SciPy installed.
 
 4. Call the memetic_climbing function with your objective function, bounds, and any additional parameters you want to specify.
 
-5. Optionally, you can modify the Test.py file to experiment with different evaluation objectives. Ensure you understand the purpose and functionality of each file before making modifications.
+5. Optionally, you can modify the Test.py file to experiment with different evaluation objectives. 
