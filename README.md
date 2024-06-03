@@ -9,7 +9,7 @@ This project focuses on enhancing the dual annealing optimization algorithm impl
 - `main.py`: This is the main script to run the improved dual annealing algorithm.
 - `MemeticClimbing.py`: This script contains the implementation of the Memetic Climbing technique, which is used to enhance the performance of the dual annealing algorithm.
 - `CEC2022.py`: This file includes benchmarks from the CEC2022 competition. Note that this file is not authored by us and is included for benchmarking purposes only https://github.com/P-N-Suganthan/2022-SO-BO.
-- `Test.py`: A test file where users can modify it for experimenting with other evaluation objectives.
+- `test.py`: A test file where users can modify it for experimenting with other evaluation objectives.
 
 
 ## How to Use the Algorithm
