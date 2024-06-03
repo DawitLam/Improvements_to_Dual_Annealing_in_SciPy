@@ -2,7 +2,7 @@
 
 # Introduction
 
-This project focuses on enhancing the dual annealing optimization algorithm implemented in the SciPy library. Our improvements aim to increase the efficiency and accuracy of this algorithm for solving complex optimization problems. The algorithm resembels of a memetic climbing algorithm, and implemented in Python is designed for optimization tasks and incorporates local search with hill climbing.
+This project focuses on enhancing the dual annealing optimization algorithm implemented in the SciPy library. The algorithm resembels of a memetic climbing algorithm, and implemented in Python is designed for optimization tasks and incorporates local search with hill climbing.
 
 ## Project Structure
 
