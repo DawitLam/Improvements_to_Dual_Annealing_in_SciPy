@@ -20,7 +20,7 @@ Ensure you have Python and SciPy installed.
 
 ## How to Use the use the Algorithm
 1. Import the memetic_climbing function from the Memetic_Climbing.py file into your Python script:
-    from Memetic_Climbing import memetic_climbing
+    `from Memetic_Climbing import memetic_climbing`
 2. Define your objective function to be optimized. Ensure that it takes a numpy array as input and returns a scalar value.
 
 3. Define the bounds for the optimization problem as a list of tuples, where each tuple represents the lower and upper bounds for each dimension.
