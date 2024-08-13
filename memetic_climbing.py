@@ -194,9 +194,31 @@ def memetic_climbing(objective, bounds, nx, cycles=1000, local_search=True):
     .. [1] SciPy optimization documentation: https://docs.scipy.org/doc/scipy/reference/optimize.html
 
     """
-    iteration_details, result = hill_climbing_with_restarts(objective, bounds, nx, cycles=cycles,
-                                                            local_search=local_search)
-    return result
+    if not callable(objective):
+        raise TypeError("The objective must be a callable function.")
+
+    if not isinstance(bounds, (list, tuple)) or len(bounds) != nx:
+        raise ValueError(f"bounds must be a sequence of {nx} (min, max) tuples.")
+
+    for bound in bounds:
+        if not isinstance(bound, (list, tuple)) or len(bound) != 2 or bound[0] > bound[1]:
+            raise ValueError("Each bound must be a (min, max) tuple with min <= max.")
+
+    if not isinstance(nx, int) or nx <= 0:
+        raise ValueError("nx must be a positive integer.")
+
+    if not isinstance(cycles, int) or cycles <= 0:
+        raise ValueError("cycles must be a positive integer.")
+
+    if not isinstance(local_search, bool):
+        raise TypeError("local_search must be a boolean.")
+
+    try:
+        iteration_details, result = hill_climbing_with_restarts(
+            objective, bounds, nx, cycles=cycles, local_search=local_search)
+        return result
+    except Exception as e:
+        raise RuntimeError(f"An error occurred during optimization: {str(e)}")
 
 def test_memetic_climbing():
     """
